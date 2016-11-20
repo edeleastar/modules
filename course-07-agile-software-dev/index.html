@@ -1,0 +1,739 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+      <style>
+        
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+    </style>
+
+  </head>
+
+  <body>
+    
+
+
+
+
+
+
+
+<header class="ui middle aligned center aligned stackable grid segment">
+
+  <a class="ui blue left corner label">
+  <div id="showTOC" class="popup" data-content="Reveal TOC">
+    <i id="toc" class="sitemap big  icon"></i>
+  </div>
+</a>
+
+  <div class="seven wide center aligned column">
+    <h2 class="headder"> Agile Software Development</h2>
+    <p> Top Level Topics </p>
+  </div>
+
+  
+<div class="two wide column sitemap">
+  <div class="popup" data-content="Top Level Topic View">
+    <a href="#"> <i class="huge home icon"></i> Topics </a>
+  </div>
+</div>
+
+  
+<div class="four wide column">
+  <div class="ui center aligned mini message segment">
+    Eamonn de Leastar (edeleastar@wit.ie).
+    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+        target="_blank">Creative Commons License
+    </a>
+  </div>
+</div>
+
+
+  
+<div class="ui two wide right aligned column">
+  <div class="ui left aligned middle aligned very basic grid">
+    <div class="row">
+      <div class="popup" data-content="All Slides in Course">
+        <a href="talkwall.html"> <i class="large film icon"></i> All Slides </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="popup" data-content="All Labs in Course">
+        <a href="labwall.html"> <i class="large lab icon"></i> All Labs </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</header>
+
+
+<div class="ui segment pushable">
+  <div class="ui inverted inline vertical sidebar menu">
+    
+    <div class="header">
+      <a class="item" href="topic01/index.html">
+        Paradigms & Languages
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic01/talk-1/a-module-introduction.pdf">
+          Module Context</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic01/talk-2/b-software-paradigms.pdf">
+          Software Paradigms</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic01/talk-3/c-programming-languages.pdf">
+          Programming Languages</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic01/book/index.html">
+          Lab-01</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic02/index.html">
+        The Java Programming Language
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic02/talk-1/a-java-overview.pdf">
+          Introduction</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic02/talk-2/b-classes.pdf">
+          Classes</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic02/talk-3/c-control-statements.pdf">
+          Control Statements</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic02/talk-4/d-object-oriented-concepts.pdf">
+          Object Oriented Concepts</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic02/talk-5/e-assignment.pdf">
+          Assignment 1</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic02/book/index.html">
+          Lab-02</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic03/index.html">
+        Inheritance & Collections
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic03/talk-1/a-inheritance.pdf">
+          Inheritance</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic03/talk-2/b-collections.pdf">
+          Collections</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic03/book/index.html">
+          Lab-03</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic04/index.html">
+        Serialization & Test Driven Development I
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic04/talk-1/a-streams.pdf">
+          Streams</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic04/talk-2/b-tdd-intro.pdf">
+          TDD Introduction</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic04/talk-3/c-first-tests.pdf">
+          First Tests</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic04/book/index.html">
+          Lab-04</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic05/index.html">
+        Test Driven Development II
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic05/talk-1/a-annotations.pdf">
+          Annotations</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic05/talk-2/b-pragmatic-testing.pdf">
+          Pragmatic Testing</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic05/talk-3/c-pacemaker-tests.pdf">
+          Pacemaker Tests</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic05/book/index.html">
+          Lab-05</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic06/index.html">
+        Exceptions & Maven
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic06/talk-1/a-exceptions.pdf">
+          Exceptions</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic06/talk-2/b-maven-introduction.pdf">
+          Maven Introduction</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic06/talk-3/c-maven-example.pdf">
+          Maven Example</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic06/talk-4/d-assessment-rubric.pdf">
+          Assessment Rubric</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic06/book/index.html">
+          Lab-06</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic07/index.html">
+        Pacemaker 1.0 in Xtend
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic07/talk-1/a-xtend-introduction.pdf">
+          Xtend Introduction</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic07/talk-2/b-pacemaker-uml-code.pdf">
+          Pacemaker Solution</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic07/talk-3/c-pacemaker-101.pdf">
+          Structure 101 Analysis</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic07/talk-4/d-assignment-2.pdf">
+          Assignment 2</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic07/book/index.html">
+          Lab-07</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic08/index.html">
+        SRP
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic08/talk-1/a-SRP.pdf">
+          Single Responsibility Principle</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic08/talk-2/b-pacemaker-cloud.pdf">
+          Pacemaker Cloud</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic08/book/index.html">
+          Lab-08</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic09/index.html">
+        Test Driven Development III
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic09/talk-1/a-writing-tests.pdf">
+          Writing Tests</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic09/talk-2/b-bicep.pdf">
+          Right BICEP</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic09/talk-3/c-correct.pdf">
+          C.O.R.R.E.C.T</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic09/talk-4/d-play-evolutions.pdf">
+          Database Evolutions</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic09/talk-5/e-testing-pacemakerplay.pdf">
+          Testing Pacemaker 2.0</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic09/book/index.html">
+          Lab-09</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic10/index.html">
+        OCP
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic10/talk-1/a-open-closed-principle.pdf">
+          Open Closed Principle</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic10/talk-2/b-pacemaker-v2.pdf">
+          Pacemaker V2</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic10/book/index.html">
+          Lab-10</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic11/index.html">
+        Test Doubles
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic11/talk-1/a-xunit-patterns.pdf">
+          XUnit Patterns</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic11/talk-2/b-test-double.pdf">
+          Test Doubles</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic11/talk-3/c-mocking-in-pacemaker.pdf">
+          Mocking in Pacemaker 2.0</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic11/book/index.html">
+          Lab-11</a>
+      </div>
+      
+    </div>
+    
+    <div class="header">
+      <a class="item" href="topic12/index.html">
+        LSP + Play
+      </a>
+    </div>
+    <div class="menu">
+      
+      <div class="menu">
+        <a class="item" href="topic12/talk-1/a-liskov-substitution-principle.pdf">
+          Liskov Substitution Principle</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic12/talk-2/a-play-2.pdf">
+          Play Framework</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic12/talk-3/c-semantic-html.pdf">
+          Semantic HTML + UI</a>
+      </div>
+      
+      <div class="menu">
+        <a class="item" href="topic12/talk-4/d-pacemakerplay.pdf">
+          Pacemaker Play Web</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <div class="ui four doubling stackable cards">
+        
+          
+  <a class="ui raised link card" href="./topic01/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Paradigms & Languages </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic01/talk-1/a-module-introduction.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>We start by exploring modern software development languages, frameworks and tools. This will include a rapid review of Java and an exploration of the principle features of successors to Java now emerging.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic02/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> The Java Programming Language </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic02/talk-1/a-java-overview.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>The java programming language is a mature, well understood language that powers many enterprises and public web applications. Originally design for the consumer electronics market, it was quickly adopted as general purpose, versatile language relatively easy to learn and master.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic03/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Inheritance & Collections </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic03/talk-1/a-inheritance.jpg">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Object Oriented thinking has consistently placed the inheritance relationship as a key feature of its approach. We review how this relationship is realized in Java. As you will see it is a complex relationship, and we will return to the difficulties it can cause in a later topic.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic04/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Serialization & Test Driven Development I </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic04/talk-1/a-streams.jpeg">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>At the heart of the JDK are object I/O and Serialization capabilities, packaged into a comprehensive library for managing the life cycle of simple objects. Although the approach taken by this particular base library has to some extent been superseded by other approaches, it remains an important and influential technical approach, that can be usefully applied in simpler standalone applications.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic05/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Test Driven Development II </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic05/talk-1/a-annotations.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Test Driven Development has been among the most influential approaches in recent software engineering history. Here we look at its origins, principles and some of the important benefits of the approach.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic06/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Exceptions & Maven </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic06/talk-1/a-exceptions.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Building and deploying Java applications can be a source of considerable complexity and ad-hoc procedures. Maven is a tool than aims to standardize this process, incorporating rigorous dependency management, repository structure and project layout best practices.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic07/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Pacemaker 1.0 in Xtend </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic07/talk-1/a-xtend-introduction.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Xtend is an interesting &quot;Java Successor&quot; language, which exhibits many modern programing language features. Strongly influenced by python and to a certain extend Scala. The language us a useful example of the effectiveness of type inference.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic08/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> SRP </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic08/talk-1/a-SRP.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>SRP is a simple yet effective guideline for determining the core features of a class. It is the first of the SOLID principles, a well respected source of effective design practices.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic09/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Test Driven Development III </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic09/talk-1/a-writing-tests.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Right BICEP: Guidelines for Composing Tests phrased using the acronym: - Right, Boundary, Inverse, Cross-check, Errors &amp; Performance.CORRECT: More guidelines - this time the acronym is Conformance, Ordering, Range, Reference, Existing, Cardinality, Time.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic10/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> OCP </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic10/talk-1/a-open-closed-principle.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>THe second of the &quot;SOLID&quot; principles: &quot;Software Entities should be open for extension but closed for modification&quot;</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic11/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> Test Doubles </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic11/talk-1/a-xunit-patterns.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>TDD is a rich and mature field, with its own literature and best practices. Here we review an attempt to capture some of this best practice into a set of higher level patterns.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+          
+  <a class="ui raised link card" href="./topic12/index.html">
+    <div class="content">
+        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
+        <div class="header"> LSP + Play </div>
+    </div>
+    <div class="image">
+      <img class="ui bordered rounded image" src="./topic12/talk-1/a-liskov-substitution-principle.png">
+    </div>
+    <div class="content">
+      <div class="description">
+         <p>Another of the SOLID principles - this time a more subtle take on inheritance, emphasizing the core behaviours expected by the relationship.</p>
+
+      </div>
+    </div>
+  </a>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+
+    </footer>
+    <script>
+      
+$(document).ready(function()
+{
+  $("img").addClass ("ui image");
+  $('.ui.embed').embed();
+
+  var images = $(".lab img");
+  jQuery.each(images, function(i)  {
+    if((images[i].alt).length > 0)
+    {
+      var div_img = $(document.createElement("div")).addClass("ui segment");
+      $(images[i]).wrap(div_img);
+      var div_label = $(document.createElement("div")).addClass("ui ribbon teal top attached label");
+      div_label.append(images[i].alt);
+      $(div_label).insertBefore(images[i]);
+    }
+  });
+
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
