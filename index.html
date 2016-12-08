@@ -53,17 +53,10 @@ figcaption
 
 <header class="ui middle aligned center aligned stackable grid segment">
 
-  <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
   <div class="seven wide center aligned column">
     <h2 class="headder"> A collection of recent Modules in Modern Application Development</h2>
     <p>  </p>
   </div>
-
 
   
 <div class="four wide column">
@@ -76,15 +69,14 @@ figcaption
 </div>
 
 
-
-
-
 </header>
+
+
 
 
 <div class="ui">
   
-  <div class="ui raised grid stackable paded segment">
+  <div class="ui raised grid stackable padded segment">
     <div class="ui middle aligned center aligned four wide column">
       <div class="ui header">
         Full Stack Node Development
@@ -147,7 +139,7 @@ figcaption
     </div>
   </div>
   
-  <div class="ui raised grid stackable paded segment">
+  <div class="ui raised grid stackable padded segment">
     <div class="ui middle aligned center aligned four wide column">
       <div class="ui header">
         Android Development
@@ -210,7 +202,7 @@ figcaption
     </div>
   </div>
   
-  <div class="ui raised grid stackable paded segment">
+  <div class="ui raised grid stackable padded segment">
     <div class="ui middle aligned center aligned four wide column">
       <div class="ui header">
         Web Development
@@ -273,7 +265,7 @@ figcaption
     </div>
   </div>
   
-  <div class="ui raised grid stackable paded segment">
+  <div class="ui raised grid stackable padded segment">
     <div class="ui middle aligned center aligned four wide column">
       <div class="ui header">
         Agile Principles & Practices
@@ -339,28 +331,26 @@ figcaption
 </div>
 
 
+
+
     <footer>
 
     </footer>
     <script>
-      
-$(document).ready(function()
-{
-  $("img").addClass ("ui image");
+      $(document).ready(function () {
+  $('img').addClass('ui image');
   $('.ui.embed').embed();
 
-  var images = $(".lab img");
-  jQuery.each(images, function(i)  {
-    if((images[i].alt).length > 0)
-    {
-      var div_img = $(document.createElement("div")).addClass("ui segment");
-      $(images[i]).wrap(div_img);
-      var div_label = $(document.createElement("div")).addClass("ui ribbon teal top attached label");
-      div_label.append(images[i].alt);
-      $(div_label).insertBefore(images[i]);
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
     }
   });
-
 
   $('.ui.menu .item')
       .tab({
